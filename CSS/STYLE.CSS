@@ -1,13 +1,38 @@
 :root{
-    --violet-doux: #6C63FF;
-    --violet-fonce: #534EDD;
+    --violet-doux: #6c63ff;
+    --violet-foncé: #534EDD;
     --orange-vif: #ffa726;
-    --gris-tres-foncé: #666;
-    --gris-tres-clair: #f8f8f8;
+    --gris-très-foncé: #666;
+    --gris-très-clair: #f8f8f8;
     --gris-clair: #EEE;
 
 }
-h1{
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    background-color: var(--gris-très-clair);
+    font-family: Roboto, sans serif;
+    line-height: 1.6;
 
-    color: var(--orange-vif);
+}
+header{
+    background-color: white;
+    box-shadow: 2px 6px 10px rgba (0, 0, 0, 05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+header div a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--violet-doux);
+
 }
